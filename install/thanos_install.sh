@@ -30,8 +30,8 @@ Group=prometheus
 Type=simple
 ExecStart=/usr/local/bin/thanos sidecar \
     --prometheus.url http://localhost:9090 \
-	--http-address 0.0.0.0:9191 \
-	--grpc-address 0.0.0.0:19090 \
+    --http-address 0.0.0.0:9191 \
+    --grpc-address 0.0.0.0:19090 \
     --tsdb.path /opt/prometheus/data/
 
 [Install]
